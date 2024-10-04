@@ -1,0 +1,41 @@
+[Dashboard](../../index.md)  &nbsp; > &nbsp; [Batches](../index.md)  &nbsp; > &nbsp; ****Batch**** 
+# Annotation Batch &nbsp; ⎯ &nbsp; aapb-collaboration-27-b
+
+\[ [batch](index.md) | **files** | [content](content.md) | [tasks](tasks.md) | [use in evaluation](evaluation.md) \]
+
+#### Batch file content
+
+<pre>
+# --------------------------------------------------------------------------------
+# This batch contains 21 handpicked videos for scene recognition with variability
+# in slates, chyrons and credits. It was originally intended for sparse time point
+# labeling for the Scene Recognition application.
+#
+# See https://github.com/clamsproject/aapb-collaboration/issues/27 for the issue 
+# on time frame detection that motivated this batch and related batches.
+#
+# Full metadata is available at https://docs.google.com/spreadsheets/d/1C1s7tJErZL3mEME78oTjaRxhWjD2Ke9pIIKFQcSyM8E/edit#gid=0
+# --------------------------------------------------------------------------------
+cpb-aacip-254-75r7szdz
+cpb-aacip-259-4j09zf95
+cpb-aacip-526-hd7np1xn78
+cpb-aacip-75-72b8h82x
+cpb-aacip-fe9efa663c6
+cpb-aacip-f5847a01db5
+cpb-aacip-f2a88c88d9d
+cpb-aacip-ec590a6761d
+cpb-aacip-c7c64922fcd
+cpb-aacip-f3fa7215348
+cpb-aacip-f13ae523e20
+cpb-aacip-e7a25f07d35
+cpb-aacip-ce6d5e4bd7f
+cpb-aacip-690722078b2
+cpb-aacip-e649135e6ec
+cpb-aacip-15-93gxdjk6
+cpb-aacip-512-4f1mg7h078
+cpb-aacip-512-4m9183583s
+cpb-aacip-512-4b2x34nt7g
+cpb-aacip-512-3n20c4tr34
+cpb-aacip-512-3f4kk9534t
+</pre>
+
