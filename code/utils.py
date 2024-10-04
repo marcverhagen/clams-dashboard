@@ -15,8 +15,9 @@ class FileSystemNode:
     functionality for path-like classes from the annotation and evaluation modules."""
 
     def __init__(self, path: Path):
-        self.name = path.name
         self.path = path
+        self.name = path.name
+        self.stem = path.stem
 
     def __eq__(self, other):
         return self.name == other.name
@@ -25,7 +26,7 @@ class FileSystemNode:
         return self.name < other.name
 
     def __str__(self):
-        return f'<{self.__class__.__name__} {self.name}>'
+        return f'<{self.__class__.__name__} "{self.name}">'
 
 
 def st_list_files(component, header: str, file_names: list, cutoff: int = 5):
@@ -83,6 +84,7 @@ def read_file(filepath: Path):
 
 
 def identity(text: str):
+    # TODO: I am not happy with this name
     return text.replace('@', ' ⟹ ')
 
 

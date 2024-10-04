@@ -30,38 +30,15 @@ class Repository:
     def load(self):
         """Load repository data."""
         self.readme = Path(self.path / 'README.md').open().read()
-        self._batches = { p.stem: Batch(p) for p in self.batch_files }
-        self._tasks = { p.stem: Task(self, p) for p in self.task_directories() }
-        self._branch_names = [ str(branch) for branch in self.repo.branches ]
-        self._branches = { str(branch): branch for branch in self.repo.branches }
-
-    @property
-    def tasks(self):
-        return sorted(self._tasks.values())
-
-    @property
-    def task_names(self):
-        return list([task.name for task in self.tasks])
-
-    @property
-    def batches(self):
-        return sorted(self._batches.values())
-
-    @property
-    def batch_names(self):
-        return sorted(self._batches.keys())
-
-    @property
-    def batch_files(self):
-        return [p for p in Path(self.path / 'batches').iterdir()]
-
-    @property
-    def branches(self):
-      return self._branches
-
-    @property
-    def branch_names(self):
-        return self._branch_names
+        batch_files = [p for p in (self.path / 'batches').iterdir()]
+        self.batches_idx = { p.stem: Batch(p) for p in batch_files }
+        self.batches = sorted(self.batches_idx.values())
+        self.batch_names = sorted(self.batches_idx.keys())
+        self.tasks_idx = { p.stem: Task(self, p) for p in self.task_directories() }
+        self.tasks = sorted(self.tasks_idx.values())
+        self.task_names = list([task.name for task in self.tasks])
+        self.branches = { str(branch): branch for branch in self.repo.branches }
+        self.branch_names = [ str(branch) for branch in self.repo.branches ]
    
     def task_directories(self):
         # TODO: now depends on there being a golds sub directory, should perhaps
@@ -69,10 +46,10 @@ class Repository:
         return [ p for p in self.path.iterdir() if Path(p / 'golds').is_dir()]
 
     def task(self, task: str):
-        return self._tasks[task]
+        return self.tasks_idx[task]
 
     def batch(self, name: str):
-        return self._batches[name]
+        return self.batches_idx[name]
 
     def checkout(self, branch: str):
         self.branches[branch].checkout()

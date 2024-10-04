@@ -3,19 +3,20 @@ from pathlib import Path
 import config
 import utils
 
+from git import Repo
 
-class Repository:
+
+class Repository(utils.FileSystemNode):
 
     """Class to give access to data in the evaluation repository."""
 
     def __init__(self, directory: str):
-        self.path = Path(directory) 
+        super().__init__(Path(directory))
+        self.repo = Repo(directory)
+        self.readme = Path(self.path / 'README.md').open().read()
         self.evaluations_idx = { p.stem: Evaluation(p) for p in self.eval_directories() }
         self.evaluations = sorted(self.evaluations_idx.values())
         self.evaluation_names = sorted(self.evaluations_idx.keys())
-
-    def __str__(self):
-        return f'<{self.__class__.__name__} "{self.path.name}">'
 
     def __getitem__(self, index: int):
         return self.evaluations[index]
@@ -33,14 +34,17 @@ class Evaluation(utils.FileSystemNode):
         super().__init__(path)
         self.readme_file = Path(path / 'README.md')
         self.readme = utils.read_file(self.readme_file)
-        self._scripts = list(path.glob('*.py'))
-        self._predictions = {}
-        self.reports = {}
+        self.scripts = list(path.glob('*.py'))
+        self.predictions_idx ={}
+        self.reports_idx = {}
         for p in self.path.iterdir():
             if p.is_dir() and p.name.startswith('preds@'):
-                self._predictions[p.name] = PredictionBatch(p)
+                self.predictions_idx[p.name] = PredictionBatch(p)
             elif p.is_file() and p.name.startswith('report-'):
-                self.reports[p.name] = Report(p)
+                self.reports_idx[p.name] = Report(p)
+        self.predictions = sorted(self.predictions_idx.values())
+        self.prediction_names = sorted(self.predictions_idx.keys())
+        self.reports = sorted(self.reports_idx.values())
 
     def __str__(self):
         return f'<{self.__class__.__name__} "{self.path.stem}">'
@@ -52,23 +56,10 @@ class Evaluation(utils.FileSystemNode):
         return self.path.stem == other.path.stem
 
     def prediction(self, name: str):
-        return self._predictions.get(name)
+        return self.predictions_idx.get(name)
 
-    @property
-    def predictions(self):
-        return self._predictions.values()
-
-    @property
-    def prediction_names(self):
-        return sorted(self._predictions.keys())
-
-    @property
-    def scripts(self):
-        return self._scripts
-
-    def get_reports(self):
-        return sorted(self.reports.values())
-
+    def report(self,name: str):
+        return self.reports_idx.get(name)
 
     def info(self):
         return (
