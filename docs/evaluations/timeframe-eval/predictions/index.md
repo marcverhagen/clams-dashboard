@@ -1,7 +1,8 @@
-[Dashboard](../../../index.md)  &nbsp; > &nbsp; [Evaluations](../../index.md)  &nbsp; > &nbsp; [Evaluation](../index.md)  &nbsp; > &nbsp; ****Predictions**** 
+[Dashboard](../../../index.md)  &nbsp; > &nbsp; [Evaluations](../../index.md)  &nbsp; > &nbsp; [Evaluation](../index.md)  &nbsp; > &nbsp; **Predictions** 
+
 # Evaluation &nbsp; ⎯ &nbsp; timeframe-eval &nbsp; ⎯ &nbsp; predictions
 
-\[ [evaluation](../index.md) | [readme](../readme.md) | [code](../code.md) | **predictions** | [reports](../reports/index.md) \]
+[evaluation](../index.md) | [readme](../readme.md) | [code](../code.md) | **predictions** | [reports](../reports/index.md) 
 
 **preds@chyron-detection@batch2** ([view on GitHub](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/timeframe-eval/preds@chyron-detection@batch2))
 

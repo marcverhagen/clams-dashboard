@@ -1,4 +1,5 @@
-[Dashboard](../index.md)  &nbsp; > &nbsp; ****Batches**** 
+[Dashboard](../index.md)  &nbsp; > &nbsp; **Batches** 
+
 # Annotation Batches
 
 Annotation batches with number of files in each batch:

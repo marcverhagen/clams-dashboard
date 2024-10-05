@@ -1,7 +1,8 @@
-[Dashboard](../../index.md)  &nbsp; > &nbsp; [Evaluations](../index.md)  &nbsp; > &nbsp; ****Evaluation**** 
+[Dashboard](../../index.md)  &nbsp; > &nbsp; [Evaluations](../index.md)  &nbsp; > &nbsp; **Evaluation** 
+
 # Evaluation &nbsp; ⎯ &nbsp; sr-eval &nbsp; ⎯ &nbsp; readme
 
-\[ [evaluation](index.md) | **readme** | [code](code.md) | [predictions](predictions/index.md) | [reports](reports/index.md) \]
+[evaluation](index.md) | **readme** | [code](code.md) | [predictions](predictions/index.md) | [reports](reports/index.md) 
 
 # Scene Recognition Evaluation
 This involves evaluating the results of the scenes-with-text classification task. While SWT returns both timepoint and

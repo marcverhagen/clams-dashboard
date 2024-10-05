@@ -1,7 +1,8 @@
-[Dashboard](../../index.md)  &nbsp; > &nbsp; [Batches](../index.md)  &nbsp; > &nbsp; ****Batch**** 
+[Dashboard](../../index.md)  &nbsp; > &nbsp; [Batches](../index.md)  &nbsp; > &nbsp; **Batch** 
+
 # Annotation Batch &nbsp; ⎯ &nbsp; aapb-collaboration-27-c
 
-\[ **batch** | [files](files.md) | [content](content.md) | [tasks](tasks.md) | [use in evaluation](evaluation.md) \]
+**batch** | [files](files.md) | [content](content.md) | [tasks](tasks.md) | [use in evaluation](evaluation.md) 
 
 Batch **aapb-collaboration-27-c** has 20 files.
 

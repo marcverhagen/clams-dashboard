@@ -1,7 +1,8 @@
-[Dashboard](../../index.md)  &nbsp; > &nbsp; [Batches](../index.md)  &nbsp; > &nbsp; ****Batch**** 
+[Dashboard](../../index.md)  &nbsp; > &nbsp; [Batches](../index.md)  &nbsp; > &nbsp; **Batch** 
+
 # Annotation Batch &nbsp; ⎯ &nbsp; aapb-collaboration-27-sr-practice
 
-\[ [batch](index.md) | [files](files.md) | [content](content.md) | **tasks** | [use in evaluation](evaluation.md) \]
+[batch](index.md) | [files](files.md) | [content](content.md) | **tasks** | [use in evaluation](evaluation.md) 
 
 #### Batch usage by annotation task
 

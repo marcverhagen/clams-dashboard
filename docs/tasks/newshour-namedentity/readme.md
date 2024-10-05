@@ -1,7 +1,8 @@
+[Dashboard](../../index.md)  &nbsp; > &nbsp; **Tasks**  &nbsp; > &nbsp; [Task](index.md) 
+
 # Annotation Task &nbsp; ⎯ &nbsp; newshour-namedentity &nbsp; ⎯ &nbsp; Readme
 
-[Dashboard](../index.md)  &nbsp; > &nbsp; ****Tasks**** 
-\[ [task](index.md) | **readme** | [gold files](golds.md) | [data drops](drops/index.md) | [batches](batches.md) | [script](script.md) \]
+[task](index.md) | **readme** | [gold files](golds.md) | [data drops](drops/index.md) | [batches](batches.md) | [script](script.md) 
 
 # NewsHour Named Entity
 

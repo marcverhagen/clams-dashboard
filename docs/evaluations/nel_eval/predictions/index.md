@@ -1,7 +1,8 @@
-[Dashboard](../../../index.md)  &nbsp; > &nbsp; [Evaluations](../../index.md)  &nbsp; > &nbsp; [Evaluation](../index.md)  &nbsp; > &nbsp; ****Predictions**** 
+[Dashboard](../../../index.md)  &nbsp; > &nbsp; [Evaluations](../../index.md)  &nbsp; > &nbsp; [Evaluation](../index.md)  &nbsp; > &nbsp; **Predictions** 
+
 # Evaluation &nbsp; ⎯ &nbsp; nel_eval &nbsp; ⎯ &nbsp; predictions
 
-\[ [evaluation](../index.md) | [readme](../readme.md) | [code](../code.md) | **predictions** | [reports](../reports/index.md) \]
+[evaluation](../index.md) | [readme](../readme.md) | [code](../code.md) | **predictions** | [reports](../reports/index.md) 
 
 **preds@dbpedia-spotlight-wrapper.5dad157@aapb-collaboration-21** ([view on GitHub](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/nel_eval/preds@dbpedia-spotlight-wrapper.5dad157@aapb-collaboration-21))
 

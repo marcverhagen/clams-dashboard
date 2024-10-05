@@ -1,4 +1,5 @@
-[Dashboard](../../../index.md)  &nbsp; > &nbsp; [Tasks](../../index.md)  &nbsp; > &nbsp; [Task](../index.md)  &nbsp; > &nbsp; ****Drops**** 
+[Dashboard](../../../index.md)  &nbsp; > &nbsp; [Tasks](../../index.md)  &nbsp; > &nbsp; [Task](../index.md)  &nbsp; > &nbsp; **Drops** 
+
 # Annotation Task &nbsp; ⎯ &nbsp; january-slates &nbsp; ⎯ &nbsp; Data drops
 
 Data drops for task **january-slates** with size in number of files.

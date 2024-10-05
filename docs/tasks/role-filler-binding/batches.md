@@ -1,12 +1,13 @@
-[Dashboard](../index.md)  &nbsp; > &nbsp; ****Tasks**** 
+[Dashboard](../../index.md)  &nbsp; > &nbsp; **Tasks**  &nbsp; > &nbsp; [Task](index.md) 
+
 # Annotation Task &nbsp; ⎯ &nbsp; role-filler-binding &nbsp; ⎯ &nbsp; Batches
 
-\[ [task](index.md) | [readme](readme.md) | [gold files](golds.md) | [data drops](drops/index.md) | **batches** | [script](script.md) \]
+[task](index.md) | [readme](readme.md) | [gold files](golds.md) | [data drops](drops/index.md) | **batches** | [script](script.md) 
 
 GUIDs from annotation batches that were used in this task:
 
 | batch | guids | batch size |
-| :------ | :------ | ------: |
+| :------ | ------: | ------: |
 | [aapb-annenv-role-filler-binder-11](../../batches/aapb-annenv-role-filler-binder-11/index.md) | 0 | 5 |
 | [aapb-annotations-44](../../batches/aapb-annotations-44/index.md) | 0 | 51 |
 | [aapb-collaboration-21](../../batches/aapb-collaboration-21/index.md) | 0 | 20 |

@@ -1,7 +1,8 @@
-[Dashboard](../../index.md)  &nbsp; > &nbsp; [Batches](../index.md)  &nbsp; > &nbsp; ****Batch**** 
+[Dashboard](../../index.md)  &nbsp; > &nbsp; [Batches](../index.md)  &nbsp; > &nbsp; **Batch** 
+
 # Annotation Batch &nbsp; ⎯ &nbsp; batch2
 
-\[ **batch** | [files](files.md) | [content](content.md) | [tasks](tasks.md) | [use in evaluation](evaluation.md) \]
+**batch** | [files](files.md) | [content](content.md) | [tasks](tasks.md) | [use in evaluation](evaluation.md) 
 
 Batch **batch2** has 24 files.
 

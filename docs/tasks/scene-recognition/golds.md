@@ -1,7 +1,8 @@
+[Dashboard](../../index.md)  &nbsp; > &nbsp; **Tasks**  &nbsp; > &nbsp; [Task](index.md) 
+
 # Annotation Task &nbsp; ⎯ &nbsp; scene-recognition &nbsp; ⎯ &nbsp; Gold files
 
-[Dashboard](../index.md)  &nbsp; > &nbsp; ****Tasks**** 
-\[ [task](index.md) | [readme](readme.md) | **gold files** | [data drops](drops/index.md) | [batches](batches.md) | [script](script.md) \]
+[task](index.md) | [readme](readme.md) | **gold files** | [data drops](drops/index.md) | [batches](batches.md) | [script](script.md) 
 
 This page lists the gold standard files in this task.The total number of files is 122, this includes files from all data drops. Clicking a link takes you to the data file in the repository.
 

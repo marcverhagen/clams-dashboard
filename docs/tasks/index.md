@@ -1,4 +1,5 @@
-[Dashboard](../index.md)  &nbsp; > &nbsp; ****Tasks**** 
+[Dashboard](../index.md)  &nbsp; > &nbsp; **Tasks** 
+
 # Annotation Tasks
 
 Annotation tasks with number of gold files in each task:

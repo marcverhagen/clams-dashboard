@@ -1,7 +1,8 @@
-[Dashboard](../index.md)  &nbsp; > &nbsp; ****Tasks**** 
+[Dashboard](../../index.md)  &nbsp; > &nbsp; **Tasks**  &nbsp; > &nbsp; [Task](index.md) 
+
 # Annotation Task &nbsp; ⎯ &nbsp; newshour-chyron &nbsp; ⎯ &nbsp; Script
 
-\[ [task](index.md) | [readme](readme.md) | [gold files](golds.md) | [data drops](drops/index.md) | [batches](batches.md) | **script** \]
+[task](index.md) | [readme](readme.md) | [gold files](golds.md) | [data drops](drops/index.md) | [batches](batches.md) | **script** 
 
 ```python
 """
