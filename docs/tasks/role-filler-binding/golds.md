@@ -1,4 +1,4 @@
-[Dashboard](../../index.md)  &nbsp; > &nbsp; **Tasks**  &nbsp; > &nbsp; [Task](index.md) 
+[Dashboard](../../index.md)  &nbsp; > &nbsp; [Tasks](../index.md)  &nbsp; > &nbsp; **Task** 
 
 # Annotation Task &nbsp; ⎯ &nbsp; role-filler-binding &nbsp; ⎯ &nbsp; Gold files
 

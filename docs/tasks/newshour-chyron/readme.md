@@ -1,10 +1,10 @@
-[Dashboard](../../index.md)  &nbsp; > &nbsp; **Tasks**  &nbsp; > &nbsp; [Task](index.md) 
+[Dashboard](../../index.md)  &nbsp; > &nbsp; [Tasks](../index.md)  &nbsp; > &nbsp; **Task** 
 
 # Annotation Task &nbsp; ⎯ &nbsp; newshour-chyron &nbsp; ⎯ &nbsp; Readme
 
 [task](index.md) | **readme** | [gold files](golds.md) | [data drops](drops/index.md) | [batches](batches.md) | [script](script.md) 
 
-# Chyrons
+## Chyrons
 
 ## Project Overview
 This project provides a dataset used for the detection of chyrons/banner-text that appears onscreen in video media.  
