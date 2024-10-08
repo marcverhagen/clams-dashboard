@@ -4,7 +4,7 @@
 
 [task](index.md) | [readme](readme.md) | **gold files** | [data drops](drops/index.md) | [batches](batches.md) | [script](script.md) 
 
-This page lists the gold standard files in this task.The total number of files is 122, this includes files from all data drops. Clicking a link takes you to the data file in the repository.
+This page lists the gold standard files in this task. The total number of files is 122, this includes files from all data drops. Clicking a link takes you to the data file in the repository.
 
 1. [cpb-aacip-00a9ed7f2ba.csv](https://github.com/clamsproject/aapb-annotations/tree/45c9efba61a2591e9fa07502c071d162c5cb99e6/scene-recognition/golds/cpb-aacip-00a9ed7f2ba.csv)
 1. [cpb-aacip-08fb0e1f287.csv](https://github.com/clamsproject/aapb-annotations/tree/45c9efba61a2591e9fa07502c071d162c5cb99e6/scene-recognition/golds/cpb-aacip-08fb0e1f287.csv)

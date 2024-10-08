@@ -4,7 +4,7 @@
 
 [task](index.md) | [readme](readme.md) | **gold files** | [data drops](drops/index.md) | [batches](batches.md) | [script](script.md) 
 
-This page lists the gold standard files in this task.The total number of files is 42, this includes files from all data drops. Clicking a link takes you to the data file in the repository.
+This page lists the gold standard files in this task. The total number of files is 42, this includes files from all data drops. Clicking a link takes you to the data file in the repository.
 
 1. [cpb-aacip-0515ac167c0.gold.csv](https://github.com/clamsproject/aapb-annotations/tree/45c9efba61a2591e9fa07502c071d162c5cb99e6/role-filler-binding/golds/cpb-aacip-0515ac167c0.gold.csv)
 1. [cpb-aacip-131-375tb64j.gold.csv](https://github.com/clamsproject/aapb-annotations/tree/45c9efba61a2591e9fa07502c071d162c5cb99e6/role-filler-binding/golds/cpb-aacip-131-375tb64j.gold.csv)

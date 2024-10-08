@@ -4,24 +4,15 @@
 
 [evaluation](../index.md) | [readme](../readme.md) | [code](../code.md) | **predictions** | [reports](../reports/index.md) 
 
-**preds@app-paddleocr-wrapper1.0@batch2** ([view on GitHub](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/ocr_eval/preds@app-paddleocr-wrapper1.0@batch2))
+🟠 *Warning: batch aapb-annotation-44 in item 2 below does not exist*
 
-None
+List of system prediction batches with number of files.
 
-**preds@doctr-wrapper1.1@aapb-annotation-44** ([view on GitHub](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/ocr_eval/preds@doctr-wrapper1.1@aapb-annotation-44))
+Click the link to see the readme file and system output on GitHub.
 
-None
-
-**preds@parseqocr-wrapper1.0@batch2** ([view on GitHub](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/ocr_eval/preds@parseqocr-wrapper1.0@batch2))
-
-- app: https://apps.clams.ai/parseqocr-wrapper/v1.0/
-- source: https://github.com/clamsproject/app-parseqocr-wrapper
-- batch: https://github.com/clamsproject/aapb-annotations/blob/80a36781fd55b5b8cb74f2de187be026f1ecbb7f/batches/batch2.txt
-
-
-**preds@tesseractocr-wrapper1.0@batch2** ([view on GitHub](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/ocr_eval/preds@tesseractocr-wrapper1.0@batch2))
-
-- app: https://apps.clams.ai/tesseractocr-wrapper/v1.0/
-- source: https://github.com/clamsproject/app-tesseractocr-wrapper
-- batch: https://github.com/clamsproject/aapb-annotations/blob/80a36781fd55b5b8cb74f2de187be026f1ecbb7f/batches/batch2.txt
-
+| n | prediction batch | files |
+| ------: | :------ | ------: |
+| 1 | [preds@app-paddleocr-wrapper1.0@batch2](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/ocr_eval/preds@app-paddleocr-wrapper1.0@batch2) | 0 |
+| 2 | [preds@doctr-wrapper1.1@aapb-annotation-44](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/ocr_eval/preds@doctr-wrapper1.1@aapb-annotation-44) | 51 |
+| 3 | [preds@parseqocr-wrapper1.0@batch2](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/ocr_eval/preds@parseqocr-wrapper1.0@batch2) | 23 |
+| 4 | [preds@tesseractocr-wrapper1.0@batch2](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/ocr_eval/preds@tesseractocr-wrapper1.0@batch2) | 23 |

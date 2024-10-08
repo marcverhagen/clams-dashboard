@@ -4,7 +4,10 @@
 
 [evaluation](../index.md) | [readme](../readme.md) | [code](../code.md) | **predictions** | [reports](../reports/index.md) 
 
-**preds@spacy-wrapper@aapb-collaboration-21** ([view on GitHub](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/ner_eval/preds@spacy-wrapper@aapb-collaboration-21))
+List of system prediction batches with number of files.
 
-None
+Click the link to see the readme file and system output on GitHub.
 
+| n | prediction batch | files |
+| ------: | :------ | ------: |
+| 1 | [preds@spacy-wrapper@aapb-collaboration-21](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/ner_eval/preds@spacy-wrapper@aapb-collaboration-21) | 20 |

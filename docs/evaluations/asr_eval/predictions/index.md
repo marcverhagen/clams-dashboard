@@ -4,24 +4,12 @@
 
 [evaluation](../index.md) | [readme](../readme.md) | [code](../code.md) | **predictions** | [reports](../reports/index.md) 
 
-**preds@aapb-pua-kaldi-wrapper@aapb-collaboration-21** ([view on GitHub](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/asr_eval/preds@aapb-pua-kaldi-wrapper@aapb-collaboration-21))
+List of system prediction batches with number of files.
 
-* app: https://github.com/clamsproject/app-aapb-pua-kaldi-wrapper/tree/v3
-* source: https://github.com/clamsproject/app-aapb-pua-kaldi-wrapper/tree/v3
-* batch: https://github.com/clamsproject/aapb-annotations/blob/main/batches/aapb-collaboration-21.txt
+Click the link to see the readme file and system output on GitHub.
 
-
-**preds@whisper-wrapper-base@aapb-collaboration-21** ([view on GitHub](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/asr_eval/preds@whisper-wrapper-base@aapb-collaboration-21))
-
-* app: http://apps.clams.ai/whisper-wrapper/v3
-* source: https://github.com/clamsproject/app-whisper-wrapper/tree/v3
-* batch: https://github.com/clamsproject/aapb-annotations/blob/main/batches/aapb-collaboration-21.txt
-
-
-**preds@whisper-wrapper-tiny@aapb-collaboration-21** ([view on GitHub](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/asr_eval/preds@whisper-wrapper-tiny@aapb-collaboration-21))
-
-* app: http://apps.clams.ai/whisper-wrapper/v3
-* source: https://github.com/clamsproject/app-whisper-wrapper/tree/v3
-* batch: https://github.com/clamsproject/aapb-annotations/blob/main/batches/aapb-collaboration-21.txt
-
-
+| n | prediction batch | files |
+| ------: | :------ | ------: |
+| 1 | [preds@aapb-pua-kaldi-wrapper@aapb-collaboration-21](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/asr_eval/preds@aapb-pua-kaldi-wrapper@aapb-collaboration-21) | 20 |
+| 2 | [preds@whisper-wrapper-base@aapb-collaboration-21](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/asr_eval/preds@whisper-wrapper-base@aapb-collaboration-21) | 20 |
+| 3 | [preds@whisper-wrapper-tiny@aapb-collaboration-21](https://github.com/clamsproject/aapb-evaluations/tree/854eeb362d3500232982eda53bda4eb47d76df51/asr_eval/preds@whisper-wrapper-tiny@aapb-collaboration-21) | 20 |

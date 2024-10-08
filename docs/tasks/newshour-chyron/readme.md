@@ -4,7 +4,7 @@
 
 [task](index.md) | **readme** | [gold files](golds.md) | [data drops](drops/index.md) | [batches](batches.md) | [script](script.md) 
 
-## Chyrons
+# Chyrons
 
 ## Project Overview
 This project provides a dataset used for the detection of chyrons/banner-text that appears onscreen in video media.  
