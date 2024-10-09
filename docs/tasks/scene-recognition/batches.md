@@ -2,7 +2,7 @@
 
 # Annotation Task &nbsp; ⎯ &nbsp; scene-recognition &nbsp; ⎯ &nbsp; Batches
 
-[task](index.md) | [readme](readme.md) | [gold files](golds.md) | [data drops](drops/index.md) | **batches** | [script](script.md) 
+[task](index.md) | [readme](readme_file.md) | [gold files](golds.md) | [data drops](drops/index.md) | **batches** | [script](script.md) 
 
 GUIDs from annotation batches that were used in this task:
 

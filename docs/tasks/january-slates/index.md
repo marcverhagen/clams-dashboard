@@ -2,7 +2,7 @@
 
 # Annotation Task &nbsp; ⎯ &nbsp; january-slates
 
-**task** | [readme](readme.md) | [gold files](golds.md) | [data drops](drops/index.md) | [batches](batches.md) | [script](script.md) 
+**task** | [readme](readme_file.md) | [gold files](golds.md) | [data drops](drops/index.md) | [batches](batches.md) | [script](script.md) 
 
 Task january-slates has 1 data drops and 887 gold files.
 

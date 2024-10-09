@@ -2,7 +2,7 @@
 
 # Annotation Task &nbsp; ⎯ &nbsp; january-slates &nbsp; ⎯ &nbsp; Script
 
-[task](index.md) | [readme](readme.md) | [gold files](golds.md) | [data drops](drops/index.md) | [batches](batches.md) | **script** 
+[task](index.md) | [readme](readme_file.md) | [gold files](golds.md) | [data drops](drops/index.md) | [batches](batches.md) | **script** 
 
 ```python
 """

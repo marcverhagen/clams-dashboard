@@ -2,9 +2,9 @@
 
 # Evaluation &nbsp; ⎯ &nbsp; sr-eval &nbsp; ⎯ &nbsp; predictions
 
-[evaluation](../index.md) | [readme](../readme.md) | [code](../code.md) | **predictions** | [reports](../reports/index.md) 
+[evaluation](../index.md) | [readme](../readme_file.md) | [code](../code.md) | **predictions** | [reports](../reports/index.md) 
 
-🟠 *Warning: batch 240117-aapb-collaboration-27-d in item 1 below does not exist*
+🟠 *Warning: batch 240117-aapb-collaboration-27-d referenced in item 1 below does not exist*
 
 List of system prediction batches with number of files.
 

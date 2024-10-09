@@ -2,7 +2,7 @@
 
 # Annotation Task &nbsp; ⎯ &nbsp; newshour-namedentity &nbsp; ⎯ &nbsp; Gold files
 
-[task](index.md) | [readme](readme.md) | **gold files** | [data drops](drops/index.md) | [batches](batches.md) | [script](script.md) 
+[task](index.md) | [readme](readme_file.md) | **gold files** | [data drops](drops/index.md) | [batches](batches.md) | [script](script.md) 
 
 This page lists the gold standard files in this task. The total number of files is 20, this includes files from all data drops. Clicking a link takes you to the data file in the repository.
 

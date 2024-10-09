@@ -2,7 +2,7 @@
 
 # Evaluation &nbsp; ⎯ &nbsp; nel_eval &nbsp; ⎯ &nbsp; code
 
-[evaluation](index.md) | [readme](readme.md) | **code** | [predictions](predictions/index.md) | [reports](reports/index.md) 
+[evaluation](index.md) | [readme](readme_file.md) | **code** | [predictions](predictions/index.md) | [reports](reports/index.md) 
 
 There are 4 code files: **test_nel.py** and **nel.py** and **evaluate.py** and **goldretriever.py**.
 

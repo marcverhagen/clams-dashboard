@@ -2,9 +2,9 @@
 
 # Evaluation &nbsp; ⎯ &nbsp; ocr_eval &nbsp; ⎯ &nbsp; predictions
 
-[evaluation](../index.md) | [readme](../readme.md) | [code](../code.md) | **predictions** | [reports](../reports/index.md) 
+[evaluation](../index.md) | [readme](../readme_file.md) | [code](../code.md) | **predictions** | [reports](../reports/index.md) 
 
-🟠 *Warning: batch aapb-annotation-44 in item 2 below does not exist*
+🟠 *Warning: batch aapb-annotation-44 referenced in item 2 below does not exist*
 
 List of system prediction batches with number of files.
 
