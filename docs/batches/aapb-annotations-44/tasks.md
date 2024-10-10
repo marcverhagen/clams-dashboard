@@ -10,9 +10,9 @@ This shows how many GUIDs from this batch were used in annotation tasks.
 
 | task name | overlap | task size |
 | :------ | ------: | ------: |
-| january-slates | 7 | 887 |
-| newshour-chyron | 1 | 24 |
-| newshour-namedentity | 0 | 20 |
-| newshour-namedentity-wikipedialink | 1 | 20 |
-| role-filler-binding | 0 | 42 |
-| scene-recognition | 0 | 122 |
+| [january-slates](../../tasks/january-slates/index.md) | 7 | 887 |
+| [newshour-chyron](../../tasks/newshour-chyron/index.md) | 1 | 24 |
+| [newshour-namedentity](../../tasks/newshour-namedentity/index.md) | 0 | 20 |
+| [newshour-namedentity-wikipedialink](../../tasks/newshour-namedentity-wikipedialink/index.md) | 1 | 20 |
+| [role-filler-binding](../../tasks/role-filler-binding/index.md) | 0 | 42 |
+| [scene-recognition](../../tasks/scene-recognition/index.md) | 0 | 122 |
