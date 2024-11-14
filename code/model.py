@@ -30,7 +30,7 @@ class Data:
         evaluation name and system report name."""
         data = []
         for evaluation in self.evaluations:
-            for report in evaluation.get_reports():
+            for report in evaluation.reports:
                 if report.report_batch == batch_name:
                     data.append([evaluation.name, report.name])
         return data

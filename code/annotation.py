@@ -1,5 +1,4 @@
 
-import os
 import re
 import json
 from io import StringIO
@@ -15,12 +14,12 @@ import config
 Comparison = namedtuple('Comparison', ['in_both', 'in_first', 'in_second'])
 
 
-class Repository:
+class Repository(utils.FileSystemNode):
 
     """Class to give access to data in the annotation repository."""
 
     def __init__(self, directory: str):
-        self.path = Path(directory)
+        super().__init__(Path(directory))
         self.repo = Repo(directory)
         self.load()
 
@@ -30,38 +29,15 @@ class Repository:
     def load(self):
         """Load repository data."""
         self.readme = Path(self.path / 'README.md').open().read()
-        self._batches = { p.stem: Batch(p) for p in self.batch_files }
-        self._tasks = { p.stem: Task(self, p) for p in self.task_directories() }
-        self._branch_names = [ str(branch) for branch in self.repo.branches ]
-        self._branches = { str(branch): branch for branch in self.repo.branches }
-
-    @property
-    def tasks(self):
-        return sorted(self._tasks.values())
-
-    @property
-    def task_names(self):
-        return list([task.name for task in self.tasks])
-
-    @property
-    def batches(self):
-        return sorted(self._batches.values())
-
-    @property
-    def batch_names(self):
-        return sorted(self._batches.keys())
-
-    @property
-    def batch_files(self):
-        return [p for p in Path(self.path / 'batches').iterdir()]
-
-    @property
-    def branches(self):
-      return self._branches
-
-    @property
-    def branch_names(self):
-        return self._branch_names
+        batch_files = [p for p in (self.path / 'batches').iterdir()]
+        self.batches_idx = { p.stem: Batch(p) for p in batch_files }
+        self.batches = sorted(self.batches_idx.values())
+        self.batch_names = sorted(self.batches_idx.keys())
+        self.tasks_idx = { p.stem: Task(self, p) for p in self.task_directories() }
+        self.tasks = sorted(self.tasks_idx.values())
+        self.task_names = list([task.name for task in self.tasks])
+        self.branches = { str(branch): branch for branch in self.repo.branches }
+        self.branch_names = [ str(branch) for branch in self.repo.branches ]
    
     def task_directories(self):
         # TODO: now depends on there being a golds sub directory, should perhaps
@@ -69,10 +45,10 @@ class Repository:
         return [ p for p in self.path.iterdir() if Path(p / 'golds').is_dir()]
 
     def task(self, task: str):
-        return self._tasks[task]
+        return self.tasks_idx[task]
 
     def batch(self, name: str):
-        return self._batches[name]
+        return self.batches_idx[name]
 
     def checkout(self, branch: str):
         self.branches[branch].checkout()
@@ -82,15 +58,20 @@ class Repository:
         print(f'\n{self}')
         print(f'\nActive branch:\n    {self.repo.active_branch}')
         print('\nBatches:')
-        for batch in self._batches:
+        for batch in self.batches:
             print('   ', batch)
         print('\nTasks:')
-        for task in self._tasks:
+        for task in self.tasks:
             print('   ', task)
         print()
 
 
 class Batch(utils.FileSystemNode):
+
+    """A Batch is created from a single file in the batches subdirectory of the
+    annotations repository. It includes a list of files referred to in the batch
+    as well as the full batch file content. It also seprates out the batch-level
+    comment at the top of the batch file."""
 
     def __init__(self, path: Path):
         super().__init__(path)
@@ -109,8 +90,7 @@ class Batch(utils.FileSystemNode):
         if self._comment is None:
             comment = StringIO()
             separator_count = 0
-            lines = self.content.split('\n')
-            for line in lines:
+            for line in self.content.split('\n'):
                 if '-' * 50 in line:
                     separator_count += 1
                     if separator_count == 2:
@@ -230,7 +210,6 @@ def test_print_gold_files():
 if __name__ == '__main__':
 
     repo = Repository(config.ANNOTATIONS)
-    repo.checkout('85-timeframes')
     repo.pp()
 
     task = repo.task('scene-recognition')

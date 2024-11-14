@@ -1,12 +1,11 @@
 import os
 import json
+from io import StringIO
 from pathlib import Path
 from random import choice
 from string import ascii_uppercase
 
-# import pandas as pd
-# import streamlit as st
-
+from git import Repo
 
 
 class FileSystemNode:
@@ -15,8 +14,9 @@ class FileSystemNode:
     functionality for path-like classes from the annotation and evaluation modules."""
 
     def __init__(self, path: Path):
-        self.name = path.name
         self.path = path
+        self.name = path.name
+        self.stem = path.stem
 
     def __eq__(self, other):
         return self.name == other.name
@@ -25,8 +25,10 @@ class FileSystemNode:
         return self.name < other.name
 
     def __str__(self):
-        return f'<{self.__class__.__name__} {self.name}>'
+        return f'<{self.__class__.__name__} "{self.name}">'
 
+
+## Streamlit utilities
 
 def st_list_files(component, header: str, file_names: list, cutoff: int = 5):
     """Display a list of file names in a Streamlit component, returns a selectbox
@@ -37,7 +39,7 @@ def st_list_files(component, header: str, file_names: list, cutoff: int = 5):
             header, file_names, label_visibility='collapsed')
     else:
         return component.radio(
-            header, file_names, label_visibility='collapsed', format_func=identity)
+            header, file_names, label_visibility='collapsed', format_func=remove_at)
 
 
 def st_list_files2(component, task, cutoff: int = 5):
@@ -56,7 +58,7 @@ def st_list_files2(component, task, cutoff: int = 5):
             'file-list', amended_fnames, label_visibility='collapsed')
     else:
         return component.radio(
-            'file-list', amended_fnames, label_visibility='collapsed', format_func=identity)
+            'file-list', amended_fnames, label_visibility='collapsed', format_func=remove_at)
 
 
 def st_display_file(component, path: Path):
@@ -75,14 +77,28 @@ def st_display_branch(component, ANNOTATIONS):
     return component.selectbox('Branch in repository:', branch_names, index=index)
 
 
+# Style to supress printing the first column of a table
+style = """
+<style>
+thead tr th:first-child {display:none}
+tbody th {display:none}
+</style>
+"""
+
+
+## General utilities
+
 def read_file(filepath: Path):
+    """Read a text file and return the content if it exists, otherwise return an
+    empty string."""
     if filepath.is_file():
         with filepath.open() as fh:
             return fh.read()
     return ''
 
 
-def identity(text: str):
+def remove_at(text: str):
+    """Replace the @ symbol in a string with an arrow."""
     return text.replace('@', ' ⟹ ')
 
 
@@ -97,11 +113,64 @@ def get_index(haystack: list, needle: str):
         return 0
 
 
+## Repository utilities
 
-# Style to supress printing the first column of a table
-style = """
-<style>
-thead tr th:first-child {display:none}
-tbody th {display:none}
-</style>
-"""
+class DirtyWorkingTreeWarning:
+
+    def __init__(self, repo: Repo, diffs: list):
+        self.commit = str(repo.head.commit)[:8]
+        dirname = Path(repo.working_tree_dir).name
+        self.message = f'some tracked files in repo "{dirname}"" were changed or deleted'
+        self.diffs = diffs
+        self.fatal = True
+
+    def __str__(self):
+        s = StringIO()
+        s.write(f'WARNING:{self.message}')
+        for diff in self.diffs:
+            s.write(f'\n{diff.change_type} {diff_path_name(diff)}')
+        return f'{s.getvalue()}'
+
+
+class UntrackedFilesWarning:
+
+    def __init__(self, repo: Repo):
+        directory = Path(repo.working_tree_dir).name
+        self.message = f'there are untracked files in repository "{directory}"'
+        self.fnames = repo.untracked_files
+        self.fatal = False
+
+    def __str__(self):
+        s = StringIO()
+        s.write(f'WARNING:{self.message}')
+        for fname in self.fnames:
+            s.write(f'\n{fname}')
+        return s.getvalue()
+
+
+def check_repository(repo: Repo) -> list:
+    """Check the repository to see whether tracked files were editted and whether
+    there are untracked files. Return a list of warning instances."""
+    # NOTE: could also use repo.is_dirty, but I want to make the distinction
+    warnings = []
+    diffs = repo.head.commit.diff(None)
+    if diffs:
+        warnings.append(DirtyWorkingTreeWarning(repo, diffs))
+    if repo.untracked_files:
+        warnings.append(UntrackedFilesWarning(repo))
+    return warnings
+
+
+def print_diff(diff):
+    print(f'{diff.change_type} {diff_path_name(diff)}')
+
+
+def diff_path_name(diff):
+    if diff.a_blob:
+        return diff.a_blob.path
+    elif diff.b_blob:
+        return diff.b_blob.path
+    else:
+        return None
+
+

@@ -39,23 +39,16 @@ from viewers.evaluation_viewer import viewer as evaluation_viewer
 
 # No debugging by default, this can be overwritten by handing an argument to the
 # script, as explained in the doc string.
-DEBUG = False
-if 'debug' in sys.argv[1:]:
-    DEBUG = True
+DEBUG = True if 'debug' in sys.argv[1:] else False
 
-CHECKOUT = True
-if 'no-checkout' in sys.argv[1:]:
-    CHECKOUT = False
+# Checking out a branch by default, when False it will just access what's in the
+# working directory
+CHECKOUT = False if 'no-checkout' in sys.argv[1:] else True
 
-if 'MODEL' not in st.session_state:
-    st.session_state['MODEL'] = model.Data(config.ANNOTATIONS,config.EVALUATIONS)
+if 'MODEL' not in st.session_state or DEBUG:
+    # also regenerating data when in debug mode
+    st.session_state['MODEL'] = model.Data(config.ANNOTATIONS, config.EVALUATIONS)
 MODEL = st.session_state['MODEL']
-
-# Without this, updates to Repository code will not be available on restarts.
-# TODO: this makes no sense, is this still needed?
-if DEBUG:
-    MODEL = st.session_state['MODEL']
-
 
 
 def debug(text: str):
